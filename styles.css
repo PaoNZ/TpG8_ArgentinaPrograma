@@ -74,11 +74,14 @@
 }
 
 .imagen-redonda {
-  width: 20vh;
-  height: 20vh;
+  width: 30vh;
+  height: 30vh;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #fff;
+}
+.card-title {
+  font-weight: bold;
 }
 
 /* personalizacion de boton de bootstrap */
@@ -186,7 +189,9 @@ h1 {
   width: 100%;
   position: relative;
 }
-
+#mp {
+  align-self: center;
+}
 
 #row2columnas {
   column-count: 2;
