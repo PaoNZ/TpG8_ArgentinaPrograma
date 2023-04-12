@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/eindustrial.jpg" class="d-block w-100" alt="Imagen 3">
+          <img src="./images/Fondo3.jpg" class="d-block w-100" alt="Imagen 3">
           <div class="logo-container">
             <img src="./images/logo_grande.png" alt="Logo" />
           </div>
@@ -137,7 +137,7 @@
           <div class="descripcion">
             <p><span>
                 <p>
-                <h1><strong>Estilo costero</strong></h1>
+                <h1><strong>Estilo mediterráneo</strong></h1>
             </p>
             <p>
             <h3><em>"Relajación en el mar"</em></h3>
@@ -912,25 +912,61 @@
 
   <!-- script de javascrip -->
   <script>
-    // script para que el logo gire
+    // // script para que el logo gire
+    // const scrollContainer = document.querySelector('.scroll-container');
+    // const paragraphs = document.querySelectorAll('.scroll-container p');
+    // const scrollSpeed = 85; // ajusta la velocidad de desplazamiento
+    // // ajustar el offset en el último párrafo cuando se cargue la página
+    // const lastParagraph = paragraphs[paragraphs.length - 1];
+    // lastParagraph.style.marginBottom = scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
+    // // ajustar el offset en el último párrafo cuando se cambie el tamaño de la ventana
+    // window.addEventListener('resize', () => {
+    //   lastParagraph.style.marginBottom = scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
+    // });
+    // // controlo que cuando salgo de la card se oculte la descripcion del estilo
+    // const collapseCards = document.querySelectorAll('.card.collapse-card');
+    // collapseCards.forEach(card => {
+    //   const collapseDiv = card.querySelector('.collapse');
+    //   card.addEventListener('focusout', () => {
+    //     collapseDiv.classList.remove('show');
+    //   });
+    // });
+
+    // // desplazar el contenido
+    // function scrollUp() {
+    //   const firstParagraph = paragraphs[0];
+    //   const currentScroll = scrollContainer.scrollTop;
+    //   const scrollAmount = currentScroll + 1;
+    //   scrollContainer.scrollTop = scrollAmount;
+
+    // }
+    // setInterval(scrollUp, scrollSpeed);
+
+    // funcion con scroll infinito
     const scrollContainer = document.querySelector('.scroll-container');
     const paragraphs = document.querySelectorAll('.scroll-container p');
     const scrollSpeed = 85; // ajusta la velocidad de desplazamiento
+
     // ajustar el offset en el último párrafo cuando se cargue la página
     const lastParagraph = paragraphs[paragraphs.length - 1];
-    lastParagraph.style.marginBottom = scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
+    lastParagraph.style.marginBottom =
+      scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
+
     // ajustar el offset en el último párrafo cuando se cambie el tamaño de la ventana
     window.addEventListener('resize', () => {
-      lastParagraph.style.marginBottom = scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
+      lastParagraph.style.marginBottom =
+        scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
     });
+
     // controlo que cuando salgo de la card se oculte la descripcion del estilo
     const collapseCards = document.querySelectorAll('.card.collapse-card');
-    collapseCards.forEach(card => {
+    collapseCards.forEach((card) => {
       const collapseDiv = card.querySelector('.collapse');
       card.addEventListener('focusout', () => {
         collapseDiv.classList.remove('show');
       });
     });
+
 
     // desplazar el contenido
     function scrollUp() {
@@ -938,16 +974,17 @@
       const currentScroll = scrollContainer.scrollTop;
       const scrollAmount = currentScroll + 1;
       scrollContainer.scrollTop = scrollAmount;
-
+      // console.log(scrollAmount,currentScroll,scrollAmount)
+      // Si alcanzamos el final del último párrafo, movemos el contenido al principio  
+      // console.log(scrollContainer.scrollHeight - scrollContainer.scrollTop, scrollContainer.clientHeight)
+      if (
+        scrollContainer.scrollHeight - scrollContainer.scrollTop === 525
+      ) {
+        scrollContainer.scrollTop = 0;
+      }
     }
+
     setInterval(scrollUp, scrollSpeed);
-
-    // funcion para detectar cuando envia el formulario
-    // document.getElementById("formulario").addEventListener("submit", function (event) {
-    //   event.preventDefault(); // Prevenir el envío del formulario
-    //   alert("Gracias por tu contacto, nos pondremos en contacto a la brevedad"); // Mostrar mensaje de alerta
-    // });
-
 
     ///funcion para validar los datos del formulario de contacto
     (() => {
@@ -984,15 +1021,8 @@
         link.addEventListener('click', goToSection);
       }
     });
-
-
-
-
   </script>
-
   <script src="./dist/js/bootstrap.min.js"></script>
-
-
 </body>
 
 </html>

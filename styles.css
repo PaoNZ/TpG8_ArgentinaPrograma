@@ -28,7 +28,8 @@
 }
 
 .carousel-item {
-  height: 100vh;
+    max-height: 900px; /* Establecer la altura máxima */
+    object-fit: cover; /* Para evitar que las imágenes se distorsionen */  
 }
 
 .descripcion {
