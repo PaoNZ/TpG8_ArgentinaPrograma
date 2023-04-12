@@ -523,6 +523,9 @@
             Somos una empresa en constante crecimiento,biodiversificada con vision de futuro.
           </em>
         </p>
+        <p class="p-2  text-center fs-4">
+          <br><br><br><br><br><br><br><br>
+        </p>                
       </div>
     </div>
   </section>
@@ -945,7 +948,7 @@
     // funcion con scroll infinito
     const scrollContainer = document.querySelector('.scroll-container');
     const paragraphs = document.querySelectorAll('.scroll-container p');
-    const scrollSpeed = 85; // ajusta la velocidad de desplazamiento
+    const scrollSpeed = 95; // ajusta la velocidad de desplazamiento
 
     // ajustar el offset en el último párrafo cuando se cargue la página
     const lastParagraph = paragraphs[paragraphs.length - 1];
@@ -974,11 +977,11 @@
       const currentScroll = scrollContainer.scrollTop;
       const scrollAmount = currentScroll + 1;
       scrollContainer.scrollTop = scrollAmount;
-      // console.log(scrollAmount,currentScroll,scrollAmount)
+      console.log(scrollContainer.scrollHeight - scrollContainer.scrollTop)
       // Si alcanzamos el final del último párrafo, movemos el contenido al principio  
       // console.log(scrollContainer.scrollHeight - scrollContainer.scrollTop, scrollContainer.clientHeight)
       if (
-        scrollContainer.scrollHeight - scrollContainer.scrollTop === 525
+        scrollContainer.scrollHeight - scrollContainer.scrollTop === 369
       ) {
         scrollContainer.scrollTop = 0;
       }
