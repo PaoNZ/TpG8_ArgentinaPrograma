@@ -18,7 +18,9 @@
   <nav class="navbar navbar-nav navbar-expand-lg bg-body-tertiary fixed-top menu" id="MainNav">
     <div class="container-fluid menu">
       <a class="navbar-brand" href="#Home">
-        <img src="./images/logo_chico.png" alt="logo" />
+        <div class="logo-container">
+          <img src="./images/logo_chico.png" alt="logo" />
+        </div>
       </a>
       <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right"
         type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +29,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="#Home">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Team">Quienes Somos</a></li>
           <li class="nav-item"><a class="nav-link" href="#Estilos">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Team">Quienes Somos</a></li>
           <li class="nav-item"><a class="nav-link" href="#Preguntas">Consultas</a></li>
           <li class="nav-item"><a class="nav-link" href="#Ubicacion">Ubicacion</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="¿Que buscas?" aria-label="¿que buscas?" />
@@ -56,10 +58,10 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./images/Fondo1.jpg" class="d-block w-100" alt="Imagen 1">
-          <div class="logo-container">
+          <img src="./images/Fondo1.jpg" class="d-block w-100 carousel-image" alt="Imagen 1">
+          <!-- <div class="logo-container">
             <img src="./images/logo_grande.png" alt="Logo" />
-          </div>
+          </div> -->
           <div class="descripcion">
             <p><span>
                 <p>
@@ -75,10 +77,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/Fondo2.jpg" class="d-block w-100" alt="Imagen 2">
-          <div class="logo-container">
+          <img src="./images/Fondo2.jpg" class="d-block w-100 carousel-image" alt="Imagen 2">
+          <!-- <div class="logo-container">
             <img src="./images/logo_grande.png" alt="Logo" />
-          </div>
+          </div> -->
           <div class="descripcion">
             <p><span>
                 <p>
@@ -93,10 +95,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/Fondo3.jpg" class="d-block w-100" alt="Imagen 3">
-          <div class="logo-container">
+          <img src="./images/Fondo3.jpg" class="d-block w-100  carousel-image" alt="Imagen 3">
+          <!-- <div class="logo-container">
             <img src="./images/logo_grande.png" alt="Logo" />
-          </div>
+          </div> -->
           <div class="descripcion">
             <p><span>
                 <p>
@@ -112,10 +114,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/Fondo4.jpg" class="d-block w-100" alt="Imagen 4">
-          <div class="logo-container">
+          <img src="./images/Fondo4.jpg" class="d-block w-100 carousel-image" alt="Imagen 4">
+          <!-- <div class="logo-container">
             <img src="./images/logo_grande.png" alt="Logo" />
-          </div>
+          </div> -->
           <div class="descripcion">
             <p><span>
                 <p>
@@ -130,10 +132,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/Fondo5.jpg" class="d-block w-100" alt="Imagen 5">
-          <div class="logo-container">
+          <img src="./images/Fondo5.jpg" class="d-block w-100  carousel-image" alt="Imagen 5">
+          <!-- <div class="logo-container">
             <img src="./images/logo_grande.png" alt="Logo" />
-          </div>
+          </div> -->
           <div class="descripcion">
             <p><span>
                 <p>
@@ -149,9 +151,9 @@
         </div>
         <div class="carousel-item">
           <img src="./images/Fondo6 .jpg" class="d-block w-100" alt="Imagen 6">
-          <div class="logo-container">
+          <!-- <div class="logo-container">
             <img src="./images/logo_grande.png" alt="Logo" />
-          </div>
+          </div> -->
           <div class="descripcion">
             <p><span>
                 <p>
@@ -188,9 +190,10 @@
               <img src="./images/Salas.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Salas</h5>
-              <p class="card-text">Los estilos para salas pueden variar desde clásicos y elegantes hasta modernos y
+              <p class="card-text d-none d-md-block">Los estilos para salas pueden variar desde clásicos y elegantes
+                hasta modernos y
                 minimalistas.</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseSalas">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse" href="#collapseSalas">
                 saber mas...</a>
               <div class="collapse" id="collapseSalas">
                 <div class="card card-body">
@@ -223,9 +226,11 @@
               <img src="./images/Dormitorios.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Dormitorios</h5>
-              <p class="card-text">Los estilos para dormitorios pueden variar desde románticos y suaves hasta modernos y
+              <p class="card-text d-none d-md-block">Los estilos para dormitorios pueden variar desde románticos y
+                suaves hasta modernos y
                 minimalistas</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseDormitorio">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse"
+                href="#collapseDormitorio">
                 saber mas...</a>
               <div class="collapse" id="collapseDormitorio">
                 <div class="card card-body">
@@ -258,10 +263,12 @@
               <img src="./images/Dormitorio1.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Dormitorios infantiles y Juveniles</h5>
-              <p class="card-text">Los estilos para dormitorios infantiles pueden variar desde temáticos y coloridos
+              <p class="card-text d-none d-md-block">Los estilos para dormitorios infantiles pueden variar desde
+                temáticos y coloridos
                 hasta
                 modernos y minimalistas</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseDormi1">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse"
+                href="#collapseDormi1">
                 saber mas...</a>
               <div class="collapse" id="collapseDormi1">
                 <div class="card card-body">
@@ -294,9 +301,10 @@
               <img src="./images/Banos.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Baños</h5>
-              <p class="card-text">Los estilos para baños pueden variar desde rústicos y acogedores hasta lujosos y
+              <p class="card-text d-none d-md-block">Los estilos para baños pueden variar desde rústicos y acogedores
+                hasta lujosos y
                 sofisticados.</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseBano">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse" href="#collapseBano">
                 saber mas...</a>
               <div class="collapse" id="collapseBano">
                 <div class="card card-body">
@@ -334,9 +342,11 @@
               <img src="./images/Fachadas.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Fachadas</h5>
-              <p class="card-text">Las fachadas pueden tener diferentes estilos decorativos, dependiendo de la
+              <p class="card-text d-none d-md-block">Las fachadas pueden tener diferentes estilos decorativos,
+                dependiendo de la
                 arquitectura y el diseño de la casa.</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseFachada">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse"
+                href="#collapseFachada">
                 saber mas...</a>
               <div class="collapse" id="collapseFachada">
                 <div class="card card-body">
@@ -371,9 +381,11 @@
               <img src="./images/Balcones.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Balcones</h5>
-              <p class="card-text">Los estilos para terrazas y balcones pueden variar desde rústicos y naturales hasta
+              <p class="card-text d-none d-md-block">Los estilos para terrazas y balcones pueden variar desde rústicos y
+                naturales hasta
                 modernos y minimalistas.</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseBalcon">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse"
+                href="#collapseBalcon">
                 saber mas...</a>
               <div class="collapse" id="collapseBalcon">
                 <div class="card card-body">
@@ -406,9 +418,11 @@
               <img src="./images/Terrazas.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Terrazas</h5>
-              <p class="card-text">Las terrazas pueden abarcar una amplia variedad de estilos decorativos, según los
+              <p class="card-text d-none d-md-block">Las terrazas pueden abarcar una amplia variedad de estilos
+                decorativos, según los
                 gustos personales y las necesidades de cada hogar.</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseTerraza">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse"
+                href="#collapseTerraza">
                 saber mas...</a>
               <div class="collapse" id="collapseTerraza">
                 <div class="card card-body">
@@ -441,9 +455,11 @@
               <img src="./images/Jardines.png" class="img-fluid rounded-circle mb-3 card-img-top imagen-redonda"
                 alt="Imagen redonda centrada" />
               <h5 class="card-title">Jardines</h5>
-              <p class="card-text">Los estilos para jardines pueden variar desde tropicales y exuberantes hasta
+              <p class="card-text d-none d-md-block">Los estilos para jardines pueden variar desde tropicales y
+                exuberantes hasta
                 minimalistas y zen.</p>
-              <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseJardin">
+              <a class="btn btn-success d-none d-md-block w-50 mx-auto" data-bs-toggle="collapse"
+                href="#collapseJardin">
                 saber mas...</a>
               <div class="collapse" id="collapseJardin">
                 <div class="card card-body">
@@ -495,16 +511,16 @@
   <!-- seccion del baner con los estilos y responsables  -->
   <section id="Team" class="border border-success  border-opacity-10">
     <div class="banner" style="margin-top:5rem ;">
-      <img src="./images/banner.png" alt="banner" style="max-height: 341px; width: auto;">
+      <img src="./images/banner.png" alt="banner" style="max-height: 341px; width: auto;" class="d-none d-lg-block">
       <div class="equipo p-2" id="equipo">
-
         <h1 class="p-2 team">Team DecoThapp</h1>
-
         <p class="text-justify team"><span><em>Diseñador de interiores:</em><strong> Alberto Merlo </strong></span></p>
         <p class="text-justify team"><span><em>Decoradora:</em><strong> Paola Nuñez</strong></span></p>
         <p class="text-justify team"><span><em>Coordinador de proyecto:</em><strong> Paola Perez</strong></span></p>
         <p class="text-justify team"><span><em>Manager de Costos:</em><strong> Hugo Medina</strong></span></p>
         <p class="text-justify team"><span><em>Instalador:</em><strong> Luis Salazar</strong></span></p>
+        <span class="p-2"><input type="button" class="btn btn-outline-success border-0" value="+Info" data-bs-toggle="modal" data-bs-target="#quienes-somos-modal">
+        </span>
       </div>
       <div class="scroll-container">
         <p class="p-2 text-center fs-4"><strong>Quienes Somos</strong><br>
@@ -525,8 +541,162 @@
         </p>
         <p class="p-2  text-center fs-4">
           <br><br><br><br><br><br><br><br>
-        </p>                
+        </p>
       </div>
+      <div class="modal fade modal-fullscreen-md-down" id="quienes-somos-modal" tabindex="-1" role="dialog" aria-labelledby="quienes-somos-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <section id="quienes-somos" class="bg-light py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="text-center">Quiénes Somos</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Alberto -->
+                  <div class="col-12">
+                    <div class="card border-0 card-deck flex-wrap">
+                      <div class="card-body text-center">
+                        <img src="./images/Alberto.png" class="rounded-circle mb-3 img-fluid" width="160" height="160"
+                          alt="Diseñador de Interiores">
+                        <h5 class="card-title mb-0">Alberto Merlo</h5>
+                        <div class="card-text text-black-50">Soy <strong> Alberto Merlo</strong>; <em> me dedico
+                            al Diseño Gráfico ,de forma independiente y para
+                            terceros , es una profesión que me apasiona ,me gusta estar constantemente en
+                            búsqueda de la creatividad e innovación
+                            , tome este curso porque siempre me intereso el desarrollo web y la programación ,
+                            nunca tuve la posibilidad de
+                            ingresar en este mundo, que por lo visto en este curso introductorio es amplio e
+                            interesante y va de la mano con mi
+                            profesión. </em></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Paola Nuñez -->
+                  <div class="col-12">
+                    <div class="card border-0 card-deck flex-wrap">
+                      <div class="card-body text-center">
+                        <img src="./images/Paola N.png" class="rounded-circle mb-3 img-fluid" width="160" height="160" alt="Decoradora">
+                        <h5 class="card-title mb-0">Paola Nuñez</h5>
+                        <div class="card-text text-black-50">  <em>Hola mi nombre es</em> <strong>Paola Gregoria Nuñez </strong> <em>soy
+                            Protesista dental y Asistente,
+                            actualmente estoy haciendo el Tramo Pedagógico Nivel medio. He hecho otros cursos y
+                            me interesó éste de desarrollo
+                            web, porque hoy en día todo tiene que ver con la tecnología, trato de ampliar mis
+                            conocimientos para tener mejores
+                            herramientas para proyectos futuros. Debo reconocer que al principio me asusto y que
+                            me pareció algo inalcanzable,
+                            sé que con prácticas y dedicación todo es posible, tengo mi familia que me
+                            acompaña.</em></strong> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Paola Perez -->
+                  <div class="col-12">
+                    <div class="card border-0 card-deck flex-wrap">
+                      <div class="card-body text-center">
+                        <img src="./images/Paola P.png" class="rounded-circle mb-3 img-fluid" width="160" height="160"
+                          alt="Coordinadora del proyecto">
+                        <h5 class="card-title mb-0">Paola Pérez</h5>
+                        <div class="card-text text-black-50"><strong>Pérez Paola Alejandra</strong><em>. Tengo
+                            46 Años y estoy en constante Crecimiento Personal, a
+                            un año de ser abogada generalista, mi orientación va ser Derecho Ambiental, Elegí
+                            varios cursos para realizar este año
+                            y el de desarrollador web lo quisiera utilizar para realizar una página para
+                            concientizar sobre el ambiente y
+                            contarles los derechos ambientales que tenemos como país como provincia y en los
+                            distintos municipios. Y desde allí
+                            abordar los problemas y las posibles soluciones, Soy Esposa, Mamá y Abuela. Y cada
+                            día creo en que una sola persona
+                            puede comenzar un gran cambio, es solo cuestión de proponérselo.</em> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Hugo Medina -->
+                  <div class="col-12">
+                    <div class="card border-0 card-deck flex-wrap">
+                      <div class="card-body text-center">
+                        <img src="./images/Hugo.png" class="rounded-circle mb-3 img-fluid" width="160" height="160"
+                          alt="Manager de Costos">
+                        <h5 class="card-title mb-0">Hugo Medina</h5>
+                        <div class="card-text text-black-50"><strong>Hugo Medina:</strong><em>Licenciado en
+                            Administración egresado de la UNC, especialista en Logística y con posgrados en
+                            Gestión,
+                            Estadística y Liderazgo. Tengo 56 años, casado y con hijo estudiante de Derecho en
+                            la Universidad Nacional de Córdoba.
+                            El motivo de mi participación en Argentina Programa 4.0 se debe a la necesidad de
+                            ampliar mis conocimientos, sobre todo
+                            en herramientas tecnológicas que son, tanto por mi especialización profesional como
+                            generacional, completamente ajenas a
+                            mi formación pero que están claramente marcando una tendencia irreversible en todos
+                            los campos.
+                            Considero que la adquisición de estas tecnologías en los tiempos que corren (ya no
+                            se puede hablar del futuro, sino del
+                            presente) suponen un gran desafió para todos quienes forman parte activa de la
+                            sociedad, sea que se trate del ámbito
+                            económico- productivo, cultural, educativo, de la información, etc.,
+                            independientemente de que se haga de esto una
+                            actividad laboral.</em>
+                          <p><em>Celebro con entusiasmo esta iniciativa del Ministerio de Economía de hacer
+                              llegar a un sector importante de la sociedad
+                              la posibilidad de adentrarse en estos conocimientos que permitirán a muchas
+                              personas la oportunidad de encontrar un
+                              nuevo rumbo para sus vidas.</em></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Tincho Salazar -->
+                  <div class="col-12">
+                    <div class="card border-0 card-deck flex-wrap">
+                      <div class="card-body text-center">
+                        <img src="./images/Tincho.jpg" class="rounded-circle mb-3 img-fluid" width="160" height="160" alt="Instalador">
+                        <h5 class="card-title mb-0">Tincho Salazar</h5>
+                        <div class="card-text text-black-50">
+                          <p><em>Hoy quiero hablarles un poco sobre mí, mi trabajo y lo que creo. Soy</em>
+                            <strong>Luis Salazar</strong>
+                            </em>programador y actualmente trabajo en una empresa privada donde tengo la
+                            oportunidad de enfrentar desafíos diariamente.
+                            Me encanta el hecho de poder encontrar soluciones creativas y efectivas para los
+                            problemas que se me presentan. Creo
+                            firmemente que la programación es una herramienta poderosa que puede cambiar el
+                            mundo y estoy emocionado de poder ser
+                            parte de ese cambio.</em>
+                          </p>
+                          <p><em>En mi trabajo, me esfuerzo por estar a la vanguardia de las últimas tecnologías
+                              y tendencias en programación. Siempre
+                              busco formas de mejorar mi conocimiento y habilidades para poder ser más eficiente
+                              y efectivo en mi trabajo. Soy una
+                              persona que disfruta del aprendizaje continuo y estoy convencido de que nunca se
+                              termina de aprender, especialmente en
+                              el campo de la tecnología donde todo evoluciona muy rápido.</em></p>
+                          </p><em> Además, me gustan los desafíos. Me emociona enfrentar problemas complicados y
+                            poder encontrar soluciones innovadoras
+                            para ellos. Siempre trato de pensar fuera de la caja y encontrar una forma diferente
+                            de resolver los problemas.</em></p>
+                          </p><em> Por último, quiero mencionar que no creo en los límites cognitivos. Creo que
+                            todos tenemos la capacidad de aprender y
+                            ser buenos en lo que nos proponemos. Es cuestión de práctica, dedicación y esfuerzo.
+                            Siempre estoy buscando formas de
+                            mejorar y superar mis propios límites.</em></p>
+                          </p></em> En resumen me encantan los desafíos y no creo en los límites cognitivos.
+                          Estoy emocionado de formar parte de una
+                          comunidad de personas que comparten mi pasión y entusiasmo por la programación.</em>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   </section>
 
@@ -536,7 +706,9 @@
     <div class="container">
       <div class="accordion" id="faqAccordion">
         <div class="row" id="row2columnas">
+          <br><br><br><br><br>
           <h1 class="text-center">Preguntas Frecuentes</h1>
+          <br><br><br><br>
           <div class="col-md-6">
             <!-- Pregunta 1 -->
             <div class="accordion-item">
@@ -717,27 +889,29 @@
     <div class="mb-2 p-4 mapa-responsivo" id="map">
       <iframe id="mp" width="700em" height="400em" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
         src="https://www.openstreetmap.org/export/embed.html?bbox=-58.48262786865235%2C-34.63921057277334%2C-58.36933135986329%2C-34.577185685081616&amp;layer=mapnik&amp;marker=-34.60820392067226%2C-58.42597961425781"
-        style="border: 1px solid black"></iframe><br /><small><a
-          href="https://www.openstreetmap.org/?mlat=-34.6082&amp;mlon=-58.4260#map=14/-34.6082/-58.4260"
+        style="border: 1px solid black"></iframe>
+      <br />
+      <small><a href="https://www.openstreetmap.org/?mlat=-34.6082&amp;mlon=-58.4260#map=14/-34.6082/-58.4260"
           target="_blank">Ver mapa más
-          grande</a></small>
-    </div>
+          grande</a>
+      </small>
     </div>
   </section>
   <!-- formulario de contacto -->
   <section id="Contacto" class=" border border-success  border-opacity-10">
     <div class="container">
+      <br><br><br><br><br>
       <h1 class="text-center">Formulario de Contacto</h1>
       <form class="row g-3 needs-validation m-5" id="formulario" novalidate>
         <!-- nombre -->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="input-group-text mx-2 p-2">
             <i class="bi bi-person-fill" style="font-size:1.8rem"></i>
             <label for="validationCustom01" class="form-label p-2">Nombre(s)</label>
-            <input type="text" class="form-control" id="validationCustom01" value="" required>
+            <input type="text" class="form-control" id="validationCustom01" name="nombre" value="" required>
           </div>
           <div class="valid-feedback">
-            comleta este campo!
+            completa este campo!
           </div>
         </div>
         <!-- apellido -->
@@ -745,10 +919,10 @@
           <div class="input-group-text mx-2 p-2">
             <i class="bi bi-person-fill" style="font-size:1.8rem"></i>
             <label for="validationCustom02" class="form-label p-2">Apellido(s)</label>
-            <input type="text" class="form-control" id="validationCustom02" value="" required>
+            <input type="text" class="form-control" id="validationCustom02" name="Apellido" value="" required>
           </div>
           <div class="valid-feedback">
-            comleta este campo!
+            completa este campo!
           </div>
         </div>
         <!-- email -->
@@ -756,19 +930,19 @@
           <div class="input-group-text has-validation mx-2 p-2">
             <i class="bi bi-envelope" style="font-size:1.8rem"></i>
             <label for="validationCustom03" class="form-label p-2">Email</label>
-            <input type="email" class="form-control" id="validationCustom03" aria-describedby="inputGroupPrepend"
-              required>
+            <input type="email" class="form-control" id="validationCustom03" name="email"
+              aria-describedby="inputGroupPrepend" required>
           </div>
           <div class="invalid-feedback">
             Este dato es necesario
           </div>
         </div>
         <!-- Pais -->
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="input-group-text has-validation mx-2 p-2">
             <i class="bi bi-flag" style="font-size:1.8rem"></i>
             <label for="validationCustom04" class="form-label p-2">Pais</label>
-            <select class="form-select" id="validationCustom04" required>
+            <select class="form-select" id="validationCustom04" name="pais" required>
               <option selected disabled value="">seleccione...</option>
               <option value="Afganistán">Afganistán</option>
               <option value="Alemania">Alemania</option>
@@ -802,11 +976,11 @@
           </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-10">
           <div class="input-group-text mx-2 p-2">
             <i class="bi bi-card-text" style="font-size:1.8rem"></i>
             <label for="validationCustom05" class="form-label p-2">Dejanos tu comentario...</label>
-            <textarea class="form-control" id="validationCustom06" rows="4"></textarea>
+            <textarea class="form-control" id="validationCustom06" name="comentario" rows="4"></textarea>
           </div>
         </div>
 
@@ -819,7 +993,8 @@
             <span class="p-2"><input type="button" class="btn btn-outline-info" value="Ver Términos y Condiciones"
                 data-bs-toggle="modal" data-bs-target="#terminosCondicionesModal">
             </span>
-            <span class="p-2"><button class="btn btn-success px-5" type="submit">Enviar</button></span>
+            <span class="p-2"><button onclick="generarPDF()" id="btn-enviar" class="btn btn-success px-5"
+                type="submit">Enviar</button></span>
             <div class="invalid-feedback">
               Antes de envia debe aceptar los terminos
             </div>
@@ -850,11 +1025,10 @@
             </div>
           </div>
         </div>
+
       </form>
     </div>
   </section>
-
-
   <footer class="footer" style="background-color: #f7efde;">
     <div class="container">
       <div class="row">
@@ -915,35 +1089,7 @@
 
   <!-- script de javascrip -->
   <script>
-    // // script para que el logo gire
-    // const scrollContainer = document.querySelector('.scroll-container');
-    // const paragraphs = document.querySelectorAll('.scroll-container p');
-    // const scrollSpeed = 85; // ajusta la velocidad de desplazamiento
-    // // ajustar el offset en el último párrafo cuando se cargue la página
-    // const lastParagraph = paragraphs[paragraphs.length - 1];
-    // lastParagraph.style.marginBottom = scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
-    // // ajustar el offset en el último párrafo cuando se cambie el tamaño de la ventana
-    // window.addEventListener('resize', () => {
-    //   lastParagraph.style.marginBottom = scrollContainer.clientHeight - lastParagraph.clientHeight + 'px';
-    // });
-    // // controlo que cuando salgo de la card se oculte la descripcion del estilo
-    // const collapseCards = document.querySelectorAll('.card.collapse-card');
-    // collapseCards.forEach(card => {
-    //   const collapseDiv = card.querySelector('.collapse');
-    //   card.addEventListener('focusout', () => {
-    //     collapseDiv.classList.remove('show');
-    //   });
-    // });
 
-    // // desplazar el contenido
-    // function scrollUp() {
-    //   const firstParagraph = paragraphs[0];
-    //   const currentScroll = scrollContainer.scrollTop;
-    //   const scrollAmount = currentScroll + 1;
-    //   scrollContainer.scrollTop = scrollAmount;
-
-    // }
-    // setInterval(scrollUp, scrollSpeed);
 
     // funcion con scroll infinito
     const scrollContainer = document.querySelector('.scroll-container');
@@ -977,7 +1123,6 @@
       const currentScroll = scrollContainer.scrollTop;
       const scrollAmount = currentScroll + 1;
       scrollContainer.scrollTop = scrollAmount;
-      console.log(scrollContainer.scrollHeight - scrollContainer.scrollTop)
       // Si alcanzamos el final del último párrafo, movemos el contenido al principio  
       // console.log(scrollContainer.scrollHeight - scrollContainer.scrollTop, scrollContainer.clientHeight)
       if (
@@ -1007,15 +1152,24 @@
     })()
 
     // funcion auxiliar para recorrer las secciones de la pagina 
+
     function goToSection(event) {
-      event.preventDefault(); // Prevenir que el enlace recargue la página      
-      const sectionId = this.getAttribute("href"); // Obtener la sección a la que se debe dirigir      
-      const sectionPosition = document.querySelector(sectionId).offsetTop; // Encontrar la posición de la sección en la página
-      window.scrollTo({                  // Desplazar la página hasta la sección
-        top: sectionPosition,
-        behavior: "smooth"
-      });
+      const linkParent = this.parentNode.parentNode; // Obtener el padre del padre del enlace
+      if (linkParent.classList.contains('mapa-responsivo')) {
+        return; // Excluir el enlace si el padre del padre del enlace es el elemento con la clase "mapa-responsivo"
+      }
+      if (!linkParent.classList.contains('col-md-12') || !linkParent.classList.contains('d-flex')
+        || !linkParent.classList.contains('justify-content-end')) { // Verificar si el padre del padre del enlace tiene las clases necesarias
+        event.preventDefault(); // Prevenir que el enlace recargue la página      
+        const sectionId = this.getAttribute("href"); // Obtener la sección a la que se debe dirigir      
+        const sectionPosition = document.querySelector(sectionId).offsetTop; // Encontrar la posición de la sección en la página        
+        window.scrollTo({                  // Desplazar la página hasta la sección
+          top: sectionPosition,
+          behavior: "smooth"
+        });
+      }
     }
+
 
     // Agregar el evento click a todos los enlaces que tienen una sección como destino
     const sectionLinks = document.querySelectorAll('a[href]');
@@ -1024,7 +1178,51 @@
         link.addEventListener('click', goToSection);
       }
     });
+
+    // función para guardar el formulario como PDF
+    function generarPDF() {
+      // Selecciona el formulario
+      var formulario = document.getElementById('formulario');
+      // Crea una instancia de jsPDF
+      var doc = new jsPDF();
+      // Agrega el logo en la cabecera
+      var logo = new Image();
+      logo.src = './images/logo_grande.png';
+      doc.addImage(logo, 'PNG', 10, 10, 30, 15);
+      // Agrega la leyenda del formulario
+      var fecha = new Date();
+      var leyenda = 'Formulario de contacto nro: ' + Math.floor(Math.random() * 1000) + ' generado el ' + fecha.toLocaleString();
+      doc.setFontSize(12);
+      doc.text(15, 40, leyenda);
+      // Genera el contenido del PDF a partir de los datos del formulario
+      var contenido = '';
+      var altura = 50;
+      for (var i = 0; i < formulario.elements.length; i++) {
+        var elemento = formulario.elements[i];
+        if (elemento.name) {
+          doc.setFontSize(12);
+          doc.text(elemento.name + ':' + '\n' , 15, altura)
+          doc.setFillColor(224, 228, 211);          
+          if (i < 4) {
+            doc.roundedRect(15, altura+2, 150, 7, 3, 3, 'FD')
+            doc.text( elemento.value, 20, altura + 7);
+          }else {            
+            doc.text( elemento.value, 20, altura + 7);
+          }          
+          altura += 15;
+        }
+      }
+      // Agrega la leyenda al pie
+      doc.setFontSize(12);
+      doc.text(10, doc.internal.pageSize.height - 10, 'Gracias por contactarse con decoThapp, en breve nos pondremos en contacto con usted.');
+      // Descarga el archivo PDF
+      doc.save('formulario.pdf');
+    }
+
+
+
   </script>
+  <script src="./dist/js/jspdf.min.js"></script>
   <script src="./dist/js/bootstrap.min.js"></script>
 </body>
 

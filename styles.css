@@ -32,6 +32,21 @@
     object-fit: cover; /* Para evitar que las imágenes se distorsionen */  
 }
 
+.carousel-item img {
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item.active img {
+  transform: scale(1.1);
+}
+
+.img-zoom:hover {
+  transform: scale(1.1);
+}
+
+
+
+
 .descripcion {
   position: absolute;
   bottom: 0;
@@ -49,15 +64,17 @@
 /* esto es para hacer 3d el logo */
 .logo-container {
   position: absolute;
-  top: 40vh;
-  left: 50vw;
+  /* top: 40vh;
+  left: 50vw; */
+  top:30px;
+  left:70px;
   transform: translate(-50%, -50%);
   max-width: 100%;
   perspective: 1000px;
 }
 
 .logo-container img {
-  width: 50%;
+  width: 70%;
   height: auto;
   display: block;
   animation: rotate 10s linear infinite;
@@ -80,6 +97,7 @@
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid #fff;
+  object-fit: cover;
 }
 .card-title {
   font-weight: bold;
@@ -140,6 +158,10 @@ ul {
   /* background-position: 951px 0;   */
 }
 
+.equipo p {
+  margin-bottom: 0.25rem; /* 4 píxeles de margen inferior */
+}
+
 .team,
 h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -161,7 +183,7 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   /* establecemos el borde con transparencia */
   backdrop-filter: blur(5px);
-  /* aplicamos el filtro de borde desenfocado */
+  
 }
 
 .scroll-container>p:last-of-type {
@@ -175,7 +197,7 @@ h1 {
   background-color: #e0e4d3;
 }
 
-.map-responsive {
+.mapa-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
@@ -183,7 +205,7 @@ h1 {
 
 }
 
-.map-responsive iframe {
+.mapa-responsive iframe {
   left: 0;
   top: 0;
   height: auto;
@@ -222,7 +244,7 @@ h1 {
   /* Eliminar borde del botón del acordeón */
   border-radius: 0;
   /* Eliminar borde redondeado del botón del acordeón */
-  font-size: 18px;
+  font-size: 1.2rem;
   /* Tamaño de fuente del botón del acordeón */
   text-align: left;
   /* Alinear texto del botón del acordeón a la izquierda */
@@ -281,18 +303,4 @@ h1 {
   text-align: center;
   color: #fff;
   padding: 2px 0;
-}
-
-
-
-
-@media only screen and (min-width: 768px) {
-  /* estilos para pantallas de 768px o más */
-  /* .image-container {
-    display: none;
-  } */
-}
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* estilos para pantallas entre 768px y 992px */
 }
